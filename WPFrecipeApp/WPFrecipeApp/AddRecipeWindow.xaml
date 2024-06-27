@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPFrecipeApp.AddRecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFrecipeApp"
+        mc:Ignorable="d"
+       Title="Add New Recipe" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Add New Recipe" FontSize="24" Margin="10" HorizontalAlignment="Center"/>
+            <TextBox Name="RecipeNameTextBox" PlaceholderText="Enter Recipe Name" Margin="10"/>
+            <TextBox Name="IngredientNameTextBox" PlaceholderText="Enter Ingredient Name" Margin="10"/>
+            <TextBox Name="IngredientQuantityTextBox" PlaceholderText="Enter Quantity" Margin="10"/>
+            <TextBox Name="IngredientUnitTextBox" PlaceholderText="Enter Unit" Margin="10"/>
+            <TextBox Name="IngredientCaloriesTextBox" PlaceholderText="Enter Calories" Margin="10"/>
+            <TextBox Name="IngredientFoodGroupTextBox" PlaceholderText="Enter Food Group" Margin="10"/>
+            <Button Content="Add Ingredient" Click="AddIngredient_Click" Margin="10"/>
+            <TextBox Name="StepTextBox" PlaceholderText="Enter Step" Margin="10"/>
+            <Button Content="Add Step" Click="AddStep_Click" Margin="10"/>
+            <Button Content="Save Recipe" Click="SaveRecipe_Click" Margin="10"/>
+            <Button Content="Cancel" Click="Cancel_Click" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
